@@ -44,8 +44,8 @@ $(document).ready(function () {
         items: 1,
         autoplay:true,
         autoplayTimeout:5000,
-        autoplaySpeed:500,
-        
+        autoplaySpeed:1000,
+        lazyLoad:true,
     })
     $('.topCategories-carousel').owlCarousel({
         loop:true,
@@ -54,7 +54,8 @@ $(document).ready(function () {
         dots:false,
         autoplay:true,
         autoplayTimeout:5000,
-        autoplaySpeed:300,
+        autoplaySpeed:1000,
+        lazyLoad:true,
         navText: ["<i class='icon-angle-left'></i>", "<i class='icon-angle-right'></i>"],
         responsive:{
             0:{
