@@ -762,13 +762,11 @@ header .mobilenavbar{
 
 section.banner img{
     width: 100%;
+}
+section.banner .item{
     transition: .3s;
 }
-section.banner .owl-item{
-    width: 100%;
-    transition: .3s;
-}
-section.banner .owl-item:hover{
+section.banner .item:hover{
     transform: scale(1.1);
 }
 section.topCategories{
