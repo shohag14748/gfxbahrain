@@ -762,6 +762,10 @@ header .mobilenavbar{
 
 section.banner img{
     width: 100%;
+    transition: .3s;
+}
+section.banner img:hover{
+    transform: scale(1.1);
 }
 section.topCategories{
     padding: 10px 0;
