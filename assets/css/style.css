@@ -764,7 +764,11 @@ section.banner img{
     width: 100%;
     transition: .3s;
 }
-section.banner img:hover{
+section.banner .owl-item{
+    width: 100%;
+    transition: .3s;
+}
+section.banner .owl-item:hover{
     transform: scale(1.1);
 }
 section.topCategories{
