@@ -1152,3 +1152,339 @@ section.topProducts .single-product .derails .items-sold{
 
 
 
+
+
+
+section.cart{
+    padding: 50px 0;
+    min-height: calc( 100vh - 250px);
+}
+section.cart .wrapper{
+    display: flex;
+}
+section.cart .wrapper .details{
+    width: 72%;
+    padding-right: 20px;
+}
+section.cart .wrapper .details th{
+    font-size: 16px;
+    color: #707070;
+    font-weight: 600;
+    padding: 8px 15px 18px
+    
+} 
+section.cart .wrapper .details th:nth-child(3){
+    text-align: center;
+    width: 300px;
+}
+section.cart .wrapper table{
+    border-collapse: collapse;
+}
+section.cart .wrapper .details .cart-item{
+    background-color: rgba(0,0,0,.02);
+}
+section.cart .wrapper table img{
+    width: 80px;
+}
+section.cart .wrapper table tbody td{
+    padding: 20px;
+    vertical-align: middle;
+    color: #25252d;
+}
+section.cart .wrapper table td:first-child{
+    padding-right: 0;
+}
+
+section.cart .wrapper table .close-btn {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: rgba(0,0,0,.05);
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+    color: #25252d;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+section.cart .wrapper table .close-btn:hover {
+    background: #25252d;
+    color: #fff;
+    transform: rotate(90deg);
+}
+section.cart .wrapper table .product-name a {
+    color: #25252d;
+    font-size: 16px;
+    text-decoration: none;
+}
+section.cart .wrapper table .product-price {
+    font-size: 14px;
+}
+section.cart .wrapper table td.product-subtotal {
+    color:  rgba(211,151,18,1);
+}
+section.cart .wrapper table td.product-quantity .quantity{
+    display: flex;
+    align-items: center
+}
+section.cart .wrapper table td.product-quantity .quantity .button{
+    border: 0;
+    font-size: 9px;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+section.cart .wrapper table td.product-quantity .quantity .button:focus{
+    outline: 0;
+}
+
+
+
+section.cart .wrapper table td.product-quantity .quantity .plus:before {
+    content: "\f067";
+    font-family: Linearicons;
+    color: #707070;
+    font-size: 9px;
+    transition: opacity ease .3s;
+}
+section.cart .wrapper table td.product-quantity .quantity .minus:before {
+    content: "\f068";
+    font-family: Linearicons;
+    color: #707070;
+    font-size: 9px;
+    transition: opacity ease .3s;
+}
+section.cart .wrapper table td.product-quantity .quantity .button:hover::before{
+    opacity: .7;
+}
+
+section.cart .wrapper table td.product-quantity .quantity .qty {
+    width: 40px;
+    text-align: center;
+    margin: 0 2px;
+    border: 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: #707070;
+}
+section.cart .wrapper table tfoot .buttons{
+    display: flex;
+    margin-top: 25px;
+}
+section.cart .wrapper table tfoot .buttons input{
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 0;
+    background: #0000000d;
+    max-width: 150px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+section.cart .wrapper table tfoot .buttons button{
+    border: 0;
+    font-size: 14px;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: rgba(211,151,18,1);
+    transition: background-color .3s ease;
+}
+section.cart .wrapper table tfoot .buttons button span {
+    margin-left: 15px;
+    display: inline-block;
+}
+section.cart .wrapper table tfoot .buttons button:disabled{
+    opacity: .6;
+}
+section.cart .wrapper table tfoot .buttons button:hover{
+    background: #000;
+}
+section.cart .wrapper table tfoot .buttons button:hover span{
+    animation: rotate-icon 2s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate-icon{
+    100%{transform: rotate(360deg)}
+}
+section.cart .wrapper table tfoot .buttons button.update-cart{
+    margin-left: auto;
+}
+
+
+section.cart .wrapper .total{
+    width: 28%;
+    padding-left: 20px;
+    min-width: 300px;
+}
+section.cart .wrapper .total h5{
+    font-size: 16px;
+    color: #707070;
+    padding: 8px 15px 18px;
+    margin: 0;
+}
+section.cart .wrapper .total .table-wrap{
+    background-color: rgba(0,0,0,.02);
+    width: 100%;
+    padding: 15px;
+}
+section.cart .wrapper .total table{
+    width: 100%;
+}
+section.cart .wrapper .total table tr.cart-subtotal th{
+    font-size: 14px;
+    font-weight: 500;
+}
+section.cart .wrapper .total table tr.cart-subtotal td{
+    font-size: 14px;
+    text-align: right;
+    padding-top: 10px;
+}
+section.cart .wrapper .total table tr.order-total{
+    background: #000;
+    color: #fff;
+}
+section.cart .wrapper .total table tr.order-total th{
+    font-weight: 500;
+    padding: 12px 15px;
+}
+section.cart .wrapper .total table tr.order-total td{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 15px
+}
+section.cart .wrapper .total .checkout{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    background: rgba(211,151,18,1);
+    color: #fff;
+    text-align: center;
+    padding: 16px 22px;
+    text-decoration: none;
+    transition: background-color .3s ease;
+}
+section.cart .wrapper .total .checkout i{
+    margin-left: 4px;
+    position: relative;
+    left: 0;
+}
+section.cart .wrapper .total .checkout:hover{
+    background: #000;
+}
+section.cart .wrapper .total .checkout:hover i{
+    animation: rightbtn .5s;
+}
+@keyframes rightbtn{
+    50%{left: 0px;opacity: 1}
+    50%{left: 20px;opacity: 0}
+    51%{left: -20px;opacity: 0}
+    100%{left: 0px;opacity: 1}
+}
+
+
+
+@media(max-width:1020px) {
+    section.cart .wrapper{
+        flex-direction: column;
+    }
+    section.cart .wrapper .total{
+        width: 100%;
+        padding: 0;
+        margin-top:100px;
+        min-width: auto;
+    }
+    section.cart .wrapper .details{
+        width: 100%;
+        padding: 0;
+    }
+    section.cart .wrapper .details table{
+        width: 100%;
+    }
+}
+@media(max-width:768px) {
+    section.cart .wrapper .details table thead{
+        display: none;
+    }
+    section.cart .wrapper .details .cart-item{
+        display: flex !important;
+        padding: 15px 40px 15px 80px;
+        position: relative;
+        flex-flow: wrap
+    }
+    section.cart .wrapper .details .cart-item td{
+        width: 100%;
+        padding: 0;
+    }
+    section.cart .wrapper .details .cart-item  .product-remove{
+        position: absolute;
+        right:5px;
+        padding: 0;
+        width: 35px;
+    }
+    section.cart .wrapper .details .cart-item  .product-thumbnail{
+        position: absolute;
+        padding: 0;
+        left: 0;
+        width: 80px;
+    }
+    section.cart .wrapper .details .cart-item  .product-name,
+    section.cart .wrapper .details .cart-item  .product-price{
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    section.cart .wrapper .details .cart-item  .product-quantity{
+        padding-left: 20px;
+        text-align: right;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 25px;
+        padding-top: 10px;
+    }
+    section.cart .wrapper .details .cart-item  .product-subtotal{
+        padding-left: 20px;
+    }
+    section.cart .wrapper .details .buttons{
+        flex-direction: column;
+    }
+    section.cart .wrapper .details .buttons input{
+        max-width: 100%;
+        width: 100%;
+        order: 2;
+        margin-right: 0;
+    }
+    section.cart .wrapper .details .buttons button{
+        width: 100%;
+        order: 2;
+    }
+    section.cart .wrapper .details .buttons button.update-cart{
+        order: 1;
+        margin-bottom: 25px;
+    }
+}
+
+img{
+    opacity: 1;
+    transition: .3s;
+}
+img[data-src]{
+    opacity: 0;
+}
+
+
+
+
+
+
+
