@@ -28,6 +28,10 @@ $(document).ready(function () {
         $('.shopping-bag').removeClass('active');
         $('.sidebar-open-overlay').removeClass('active');
     })
+    $('.cuppon .head a').click(function (e) {
+        e.preventDefault();
+        $('.cuppon .body').slideToggle();
+    })
     $(window).scroll(function(){
         if($(window).scrollTop() > 100){
             $('.main-menu').addClass('scroll');
@@ -35,7 +39,11 @@ $(document).ready(function () {
             $('.main-menu').removeClass('scroll');
         }
     })
-
+    $('input[name="payment-system"]').on('change',function(){
+        var value = $('input[name="payment-system"]:checked').val();
+        $('input[value="' + value +'"]:checked').parent().siblings().slideDown().parent().siblings().children('p').slideUp();
+    })
+    
     $('.banner-carousel').owlCarousel({
         loop: true,
         margin: 0,
@@ -66,4 +74,43 @@ $(document).ready(function () {
             }
         }
     })
+    
+    
+    
+    
+    var tstime = 0;
+    $('.single-product').each(function(){
+        if($(this).offset().top < $(window).scrollTop() + $(window).height()){
+            $(this).addClass('fadeIn');
+            $(this).css('transition-delay', tstime + 's');
+            tstime+=.2;
+        }
+    })
+    $(window).scroll(function(){
+        var tstime = 0;
+        $('.single-product').each(function(){
+            if(!$(this).hasClass('fadeIn')){
+                if($(this).offset().top < $(window).scrollTop() + $(window).height() - 70){
+                    $(this).addClass('fadeIn');
+                    $(this).css('transition-delay', tstime + 's');
+                    tstime+=.2;
+                }
+            }
+        });
+    })
+    
+    $('.filter .advance-toggler').click(function(){
+        $(this).toggleClass('open');
+        $('.advance-filter').slideToggle();
+    })
+    $('.filter .short').click(function(){
+        $(this).toggleClass('open');
+    })
+    $('.filter .search-btn').click(function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('open');
+    });
+    $('img.lazy').lazyload({
+        effect: "fadeIn"
+      });
 });

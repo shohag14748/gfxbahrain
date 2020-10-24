@@ -182,27 +182,125 @@
 
     <section class="checkout">
         <div class="container">
-           <div class="wrapper d-flex">
-               
-            <div class="total">
-                <h5>CART TOTALS</h5>
-                <div class="table-wrap">
-                <table cellspacing="0" class="shop_table shop_table_responsive">
-                    <tbody>
-                        <tr class="cart-subtotal">
-                            <th>Subtotal</th>
-                            <td>200.000 .د.ب</td>
-                        </tr>
-                        <tr class="order-total">
-                            <th>Total</th>
-                            <td>200.000 .د.ب </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <p class="have-account"><i class="icon-warning"></i> Returning customer? <a href="">Click here to login</a></p>
+            <div class="cuppon">
+                <div class="head">
+                    <a href="">Have a coupon? Click here to enter your code</a>
+                </div>
+                <div class="body">
+                    <p>If you have a coupon code, please apply it below.</p>
+                    <form action="">
+                        <input type="text" placeholder="Coupon code">
+                        <button class="apply-coupon btn btn-primary">APPLY COUPON</button>
+                    </form>
+                </div>
             </div>
-            <a href="" class="checkout"><span>PROCEED TO CHECKOUT</span><i class="icon-arrow-right"></i></a>
-            </div>
-        </div>
+            <form action="">
+                <div class="wrapper d-flex">
+                    <div class="billing-details">
+                       <h3 class="billing-details-title">BILLING DETAILS</h3>
+                        <div class="inputs-wrap d-flex">
+                            <div class="input-wrap">
+                                <input type="text" id="fname" class="form-control">
+                                <label for="fname">First name <span>*</span></label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" id="lname" class="form-control">
+                                <label for="lname">Last name <span>*</span></label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <select name="" class="form-control" id="region">
+                                <option value="1">Bermuda</option>
+                            </select>
+                            <label for="region">Country / Region <span>*</span></label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" id="address" class="form-control" placeholder="Road Number">
+                            <label for="address">Address <span>*</span></label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" id="address2" class="form-control">
+                            <label for="address2">Address 2 (optional)</label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" id="area" class="form-control">
+                            <label for="area">Area <span>*</span></label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" id="phone" class="form-control">
+                            <label for="phone">Phone <span>*</span></label>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="email" id="email" class="form-control">
+                            <label for="email">Email address <span>*</span></label>
+                        </div>
+                        <div class="input-wrap ch-box">
+                            <input type="checkbox" id="create-account">
+                            <label for="create-account"> Create an account?</label>
+                        </div>
+                        <div class="input-wrap">
+                            <h3>ADDITIONAL INFORMATION</h3>
+                            <textarea name="" id="note" class="form-control" cols="30" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                            <label for="note">Order notes (optional)</label>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h3>YOUR ORDER</h3>
+                        <div class="table-wrap">
+                            <table cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="product">
+                                        <td>Gold Nose Pin (22Kt Purity) <strong class="product-quantity">× 1</strong></td>
+                                        <td>12.000 .د.ب</td>
+                                    </tr>
+                                    <tr class="cart-subtotal">
+                                        <td>Subtotal</td>
+                                        <td>12.000 .د.ب</td>
+                                    </tr>
+                                    <tr class="order-total">
+                                        <td>Total</td>
+                                        <td>200.000 .د.ب </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="payment">
+                           <div class="collapsepayments">
+                            <div class="input-wrap">
+                                <div class="top">
+                                    <input type="radio" id="cod" name="payment-system" value="1" checked>
+                                    <label for="cod"> Cash on delivery</label>
+                                </div>
+                                <p>Pay with cash upon delivery.</p>
+                            </div>
+                            <div class="input-wrap">
+                                <div class="top">
+                                    <input type="radio" name="payment-system" value="2" id="top">
+                                    <label for="top">Tap <img src="assets/image/payment-m-logo.png" alt=""></label>
+                                </div>
+                                <p>pay via Tap; you can pay securely with your debit or credit card.</p>
+                            </div>
+                           </div>
+                            <div class="input-wrap recive-email-wrap">
+                                <input type="checkbox" id="recive-email">
+                                <label for="recive-email">I would like to receive exclusive emails with discounts and product information</label>
+                            </div>
+                            <p class="plaicy">
+                                Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="">privacy policy</a>.
+                            </p>
+                            <button type="submit" class=" place-order btn btn-primary btn-block">Place order</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -239,6 +337,4 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
-</html>
+</body></html>
