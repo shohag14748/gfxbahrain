@@ -79,9 +79,11 @@ p {
     display: flex;
     flex-direction: column;
 }
-.gallery-top{
-    flex-grow: 1;
+
+.gallery-top {
+    /*    flex-grow: 1;*/
 }
+
 .swiper-container {
     width: 100%;
     margin-left: auto;
@@ -103,8 +105,8 @@ p {
 }
 
 .gallery-thumbs .swiper-slide {
-/*    width: 25%;*/
-/*    height: 100%;*/
+    /*    width: 25%;*/
+    /*    height: 100%;*/
     opacity: 0.4;
 }
 
@@ -119,7 +121,7 @@ p {
 
 .productItemDetails {
     background-color: #f9f8f6;
-    padding: 30px 30px 10px;
+    padding: 25px 30px 10px;
     margin-left: 20px;
 }
 
@@ -188,7 +190,7 @@ p {
 .productItemDetails .variation {
     display: flex;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .productItemDetails .variation h5 {
@@ -299,13 +301,14 @@ p {
     width: 100%;
 }
 
-.socialIcon i {
+.productItemDetails .socialIcon i {
     font-size: 18px;
     color: #4a4a4a;
     padding: 10px;
     margin: 10px 20px 0px 0px;
 }
-.socialIcon i:first-child {
+
+.productItemDetails .socialIcon i:first-child {
     margin-left: 0;
     padding-left: 5px;
 }
@@ -639,17 +642,18 @@ p {
 .aboutProduct .innerText img {
     width: 55px;
 }
-.verticlImg{
+
+.verticlImg {
     position: absolute;
     top: 8%;
     left: 8%;
     width: 60px;
 }
-.aboutImg {
-    position: relative;
-    margin-top: -30px;
-    overflow: hidden;
-}
+ .aboutImg {
+        position: absolute;
+        bottom: 0;
+     overflow: hidden;
+    }
 
 .aboutImg::before {
     position: absolute;
@@ -680,6 +684,8 @@ p {
 
 .innerTextL h2 {
     margin-top: 10px;
+    width: calc(100% - 130px);
+    max-width: 500px;
 }
 
 .innerTextL p {
@@ -788,3 +794,591 @@ input[type=text]:focus {
     font-weight: 300;
     padding: 10px;
 }
+
+footer .socialIcon {
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+footer .socialIcon i {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 25px;
+
+}
+
+footer .socialIcon a {
+    color: #fff;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+footer .socialIcon a:hover {
+    color: #fff;
+    opacity: .9;
+}
+
+footer .socialIcon a img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.dropdown-toggle::after {
+    color: #fff;
+}
+
+.dropdown-menu a:hover {
+    color: #000 !important;
+}
+
+.dropdown-menu a {
+    color: #000 !important;
+}
+
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1600px;
+        /*        width: 90%;*/
+    }
+
+    h1 {
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 33px;
+        font-weight: 900;
+    }
+
+    h3 {
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    h4 {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+
+    /*Product item Details design*/
+    .productDetails {
+        padding: 40px 0;
+    }
+
+    .productItemDetails {
+        padding: 40px;
+        margin-left: 40px;
+        padding-bottom: 35px;
+    }
+
+    .productItemDetails p.info {
+        font-size: 18px;
+    }
+
+    .productItemDetails .prductHeading {
+        margin-top: 20px;
+    }
+
+    .productItemDetails .prductHeading .productReview img {
+        width: 27px;
+    }
+
+    .productItemDetails .prductHeading .productReview p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .productItemDetails .price h5 {
+        font-size: 26px;
+        padding: 17px 0;
+    }
+
+    .productItemDetails .paymentby .bank img {
+        height: 30px;
+    }
+
+    .productItemDetails .paymentby .bank img:last-child {
+        margin-left: 25px;
+    }
+
+    .productItemDetails .paymentby .bank p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .productItemDetails p.description {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .productItemDetails .variation {
+        padding: 25px 0;
+    }
+
+    .productItemDetails .variation h5 {
+        font-size: 24px;
+    }
+
+    .productItemDetails .variation h5 span {
+        margin-right: 45px;
+    }
+
+
+    .productItemDetails .variation .imgBox img {
+        width: 80px;
+        margin-right: 25px;
+    }
+
+
+    .productItemDetails .include {
+        padding: 18px;
+    }
+
+    .productItemDetails .include .imgBox {
+        padding: 0 40px 0 35px;
+    }
+
+    .productItemDetails .include img {
+        height: 42px;
+    }
+
+    .productItemDetails .include .ratio p {
+
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .productItemDetails .include ol li {
+        font-size: 16px;
+    }
+
+    .productItemDetails .include ol {
+        margin-left: 40px;
+    }
+
+    .addToCart .quantityCheckBox {
+        width: 150px;
+        margin-right: 30px;
+    }
+
+    .addToCart .quantityCheckBox button {
+        padding: 13px 17px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+
+    .addToCart .quantityCheckBox input {
+        font-size: 22px;
+    }
+
+    .addToCart form {
+        margin-top: 20px;
+    }
+
+    .addToCartButton {
+        display: block;
+        width: calc(100% - 180px);
+    }
+
+
+    .addToCartButton button {
+        font-size: 20px;
+        padding: 17px;
+    }
+
+    .productItemDetails .socialIcon i {
+        font-size: 22px;
+        color: #4a4a4a;
+        padding: 10px;
+        margin: 10px 30px 0px 0px;
+    }
+
+    .productItemDetails .socialIcon i:first-child {
+        margin-left: 0;
+        padding-left: 5px;
+    }
+
+    .swiper-slide img {
+        height: auto;
+    }
+
+
+    /*Collection Section*/
+
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .collectionIncluded .sectionDesc {
+        padding: 50px 0 40px;
+    }
+
+    .collectionIncluded .sectionDesc img {
+        width: 300px
+    }
+
+    .collectionIncluded .sectionDesc h3 {
+        padding: 20px 0 15px;
+        margin-bottom: 0;
+    }
+
+    .collectionIncluded .sectionDesc p {
+        max-width: 1230px;
+        font-size: 20px;
+    }
+
+
+    .collectionItem {
+        margin-bottom: 40px;
+    }
+
+    .collectionIncluded .flexItem {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .collectionIncluded .col-lg-3 {
+        padding: 0 20px
+    }
+
+    .collectionItem .collectionTop .img .overlay {
+        padding: 25px;
+    }
+
+    .collectionItem .collectionTop .img .overlay p {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 300;
+    }
+
+    .collectionItem .collectionTop .img .overlay ul {
+        font-size: 16px;
+    }
+
+    .collectionItem .collectionTop .img .overlay ul li {
+        padding: 3px 0
+    }
+
+    .collectionItem .collectionText {
+        background-color: #fff;
+        text-align: center;
+        padding: 20px 5px;
+    }
+
+    .collectionItem .collectionText h5 {
+        margin-bottom: 0;
+        font-weight: 900;
+    }
+
+    .collectionItem .collectionText h4 {
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+
+    .collectionItem .collectionText p {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    /*Iconic Viol Section Start*/
+    .iconicViol .iconicViolInner {
+        background-size: cover;
+    }
+
+    .iconicViolInner .details p {
+        font-size: 30px;
+    }
+
+    .iconicViolInner .details h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .iconicViolInner .details {
+        padding: 90px 60px 75px 20px;
+    }
+
+    .iconicViol .thumbnail {
+        margin-top: 40px;
+    }
+
+    .iconicViol .thumbnail p {
+        font-size: 22px;
+        text-transform: uppercase;
+        padding-top: 3px;
+    }
+
+    .howToRefil .row,
+    .collectionIncluded .flexItem {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .howToRefil .col-lg-4,
+    .collectionIncluded .col-lg-3 {
+        padding: 0 20px
+    }
+    
+    .howToRefil .sectionTitle p{
+        max-width: 1230px;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .howToRefil .imgBox p {
+        padding: 30px;
+    }
+    .howToRefil .imgBox {
+    margin-top: 40px;
+}
+    .onTreePlanet .container {
+    padding: 80px 20px;
+}
+    .onTreePlanet .innerItem .planterDetails p {
+        font-size: 26px;
+        max-width: 574px;
+        line-height: 39px;
+    }
+    .aboutProduct .innerText p{
+        font-size: 22px;
+    }
+    .innerTextL p{
+        font-size: 22px;
+    }
+    .verticlImg{
+        width: 70px
+    }
+    .reviews .container p {
+    max-width: 1230px;
+    font-size: 20px;
+}
+    
+    /*Footer section start*/
+
+.footerArea .container {
+    padding: 80px 20px;
+}
+
+.footerArea p {
+    font-size: 16px;
+}
+
+.footerArea .title p {
+    margin-bottom: 25px;
+}
+
+
+.footerArea ul li {}
+
+.footerArea ul li a {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.footerArea .inputGroup {
+    margin-top: 25px;
+}
+
+input[type=text] {
+    font-size: 16px;
+}
+
+
+
+
+
+
+.footerArea .copyright {
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+
+footer .socialIcon a img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+}
+
+@media (max-width:1600px) and (min-width:1400px) {
+
+    .collectionItem .collectionTop .img .overlay p {
+        font-size: 1.2vw;
+        line-height: 1.6vw
+    }
+
+    .collectionItem .collectionTop .img .overlay ul {
+        font-size: 1vw;
+        line-height: 1.2vw;
+    }
+}
+
+@media (max-width:1200px){
+    .collectionItem .collectionTop .img .overlay p{
+        font-size: 
+    }
+    .iconicViol .iconicViolInner{
+        background-size: cover;
+    }
+    .iconicViolInner .details p{
+        font-size: 18px;
+    }
+    .iconicViolInner .details {
+    padding: 60px 42px 50px 10px;
+}
+    .howToRefil .col-lg-4{
+        margin-top: 30px;
+    }
+    .howToRefil .imgBox{
+        height: 100%;
+        background: #fff;
+        margin: 0;
+    }
+    
+    .onTreePlanet .innerItem .planterDetails {
+    background-color: rgba(74, 74, 74, .9);
+    color: #fff;
+    padding: 60px 20px 60px 50px;
+}
+    .onTreePlanet .innerItem .planterDetails p {
+        font-size: 18px;
+    }
+    .onTreePlanet .innerItem .planterDetails img {
+        height: 70px;
+        width: auto;
+        
+    }
+    .aboutProduct .innerText p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+    .innerTextL p {
+    font-size: 17px;
+}
+    .headingL img {
+        width: 100px;
+    }
+    
+}
+
+@media (max-width:991px){
+    .productItemDetails{
+        margin: 0;
+        margin-top: 20px;   
+    padding: 30px;
+    }
+    .productItemDetails .paymentby .bank {
+        justify-content: space-between;
+    }
+    .productItemDetails .include{
+        padding: 15px
+    }
+    .colfix {
+    padding-right: 15px;
+}
+    .collectionIncluded .sectionTitle {
+        padding-top: 0;
+    }
+    .collectionItem .collectionTop .img .overlay {
+        padding: 20px;
+}
+    .collectionItem .collectionTop .img .overlay p{
+        line-height: 25px;
+    }
+    .iconicViolInner .details {
+    padding: 50px;
+}
+    .iconicViolInner .details p{
+        padding: 20px 0;
+    }
+    .iconicViol .iconicViolInner {
+        
+    background-image: url(../img/Iconic_viol_movile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top:640px ;
+}
+    
+    .onTreePlanet .innerItem .planterDetails {
+    background-color: rgba(74, 74, 74, 1);
+}
+    .onTreePlanet .innerItem .brandImg {
+    top: 250px;
+    left: 70px;
+}
+    .aboutImg{
+        position: relative;
+    }
+    footer .col-6{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 100%;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+    .swiper-container-thumbs{
+        display: none !important;
+    }
+    .productItemDetails{
+        margin-top: 0;
+        padding: 40px 40px 30px;
+    }
+    .collectionIncluded .sectionTitle{
+        padding: 0px 0 30px;
+    }
+    .collectionIncluded .sectionDesc{
+        padding: 40px 40px 30px;
+    }
+    .collectionIncluded .row{
+        margin: 0;
+    }
+    .collectionIncluded .row .col-6{
+        padding: 0;
+    }
+    .collectionItem{
+        margin: 0 !important;
+    }
+    .iconicViolInner .details {
+    padding: 40px;
+}
+    .collectionIncluded{
+        padding-bottom: 60px;
+    }
+    .iconicViol{
+        padding: 0;
+    }
+    .iconicViolInner .details h2 {
+        font-size: 30px;
+    }
+    .iconicViolInner .details p {
+    font-size: 22px;
+        padding-top: 0px;
+}
+    .iconicViol .iconicViolInner{
+        padding-top: 580px;
+    }
+}
+
+
+
