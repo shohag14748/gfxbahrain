@@ -113,9 +113,14 @@ p {
 .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
 }
-.swiper-button i{
-        display: none;
-    }
+
+.swiper-button {
+    color: #fff !important;
+}
+
+.swiper-button i {
+    display: none;
+}
 
 /*Product item Details design*/
 .productDetails {
@@ -653,11 +658,12 @@ p {
     left: 8%;
     width: 60px;
 }
- .aboutImg {
-        position: absolute;
-        bottom: 0;
-     overflow: hidden;
-    }
+
+.aboutImg {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
 
 .aboutImg::before {
     position: absolute;
@@ -713,9 +719,11 @@ p {
     right: 0;
     top: -20px
 }
+
 img.collectionWhite {
     display: none;
 }
+
 /*Footer section start*/
 .footerArea {
     background-color: #000;
@@ -843,10 +851,9 @@ footer .socialIcon a img {
 }
 
 
-@media (min-width:1400px) {
+@media (min-width:1500px) {
     .container {
         max-width: 1600px;
-        /*        width: 90%;*/
     }
 
     h1 {
@@ -1135,94 +1142,103 @@ footer .socialIcon a img {
         margin-left: -20px;
         margin-right: -20px;
     }
+
     .howToRefil .col-lg-4,
     .collectionIncluded .col-xl-3 {
         padding: 0 20px
     }
-    
-    .howToRefil .sectionTitle p{
+
+    .howToRefil .sectionTitle p {
         max-width: 1230px;
         font-size: 20px;
         margin-top: 25px;
     }
+
     .howToRefil .imgBox p {
         padding: 30px;
     }
+
     .howToRefil .imgBox {
-    margin-top: 40px;
-}
+        margin-top: 40px;
+    }
+
     .onTreePlanet .container {
-    padding: 80px 20px;
-}
+        padding: 80px 20px;
+    }
+
     .onTreePlanet .innerItem .planterDetails p {
         font-size: 26px;
         max-width: 574px;
         line-height: 39px;
     }
-    .aboutProduct .innerText p{
+
+    .aboutProduct .innerText p {
         font-size: 22px;
     }
-    .innerTextL p{
+
+    .innerTextL p {
         font-size: 22px;
     }
-    .verticlImg{
+
+    .verticlImg {
         width: 70px
     }
+
     .reviews .container p {
-    max-width: 1230px;
-    font-size: 20px;
-}
-    
+        max-width: 1230px;
+        font-size: 20px;
+    }
+
     /*Footer section start*/
 
-.footerArea .container {
-    padding: 80px 20px;
+    .footerArea .container {
+        padding: 80px 20px;
+    }
+
+    .footerArea p {
+        font-size: 16px;
+    }
+
+    .footerArea .title p {
+        margin-bottom: 25px;
+    }
+
+
+    .footerArea ul li {}
+
+    .footerArea ul li a {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .footerArea .inputGroup {
+        margin-top: 25px;
+    }
+
+    input[type=text] {
+        font-size: 16px;
+    }
+
+
+
+
+
+
+    .footerArea .copyright {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+
+
+    footer .socialIcon a img {
+        margin-right: 10px;
+        height: 20px;
+    }
+
 }
 
-.footerArea p {
-    font-size: 16px;
-}
-
-.footerArea .title p {
-    margin-bottom: 25px;
-}
-
-
-.footerArea ul li {}
-
-.footerArea ul li a {
-    padding: 10px 0;
-    font-size: 16px;
-}
-
-.footerArea .inputGroup {
-    margin-top: 25px;
-}
-
-input[type=text] {
-    font-size: 16px;
-}
-
-
-
-
-
-
-.footerArea .copyright {
-    font-size: 16px;
-    padding: 20px;
-}
-
-
-
-footer .socialIcon a img {
-    margin-right: 10px;
-    height: 20px;
-}
-
-}
-
-@media (max-width:1600px) and (min-width:1400px) {
+@media (max-width:1600px) and (min-width:1500px) {
 
     .collectionItem .collectionTop .img .overlay p {
         font-size: 1.2vw;
@@ -1235,199 +1251,247 @@ footer .socialIcon a img {
     }
 }
 
-@media (max-width:1200px){
-    .collectionItem .collectionTop .img .overlay p{
-        font-size: 
+@media (max-width:1200px) {
+    .collectionItem .collectionTop .img .overlay p {
+        font-size:
     }
-    .iconicViol .iconicViolInner{
+
+    .iconicViol .iconicViolInner {
         background-size: cover;
     }
-    .iconicViolInner .details p{
+
+    .iconicViolInner .details p {
         font-size: 18px;
     }
+
     .iconicViolInner .details {
-    padding: 60px 42px 50px 10px;
-}
-    .howToRefil .col-lg-4{
+        padding: 60px 42px 50px 10px;
+    }
+
+    .howToRefil .col-lg-4 {
         margin-top: 30px;
     }
-    .howToRefil .imgBox{
+
+    .howToRefil .imgBox {
         height: 100%;
         background: #fff;
         margin: 0;
     }
-    
+
     .onTreePlanet .innerItem .planterDetails {
-    background-color: rgba(74, 74, 74, .9);
-    color: #fff;
-    padding: 60px 20px 60px 50px;
-}
+        background-color: rgba(74, 74, 74, .9);
+        color: #fff;
+        padding: 60px 20px 60px 50px;
+    }
+
     .onTreePlanet .innerItem .planterDetails p {
         font-size: 18px;
     }
+
     .onTreePlanet .innerItem .planterDetails img {
         height: 70px;
         width: auto;
-        
+
     }
+
     .aboutProduct .innerText p {
-    font-size: 17px;
-    margin-bottom: 25px;
-}
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
     .innerTextL p {
-    font-size: 17px;
-}
+        font-size: 17px;
+    }
+
     .headingL img {
         width: 100px;
     }
-    
+
 }
 
-@media (max-width:991px){
-    .productItemDetails{
+@media (max-width:991px) {
+    .productItemDetails {
         margin: 0;
-        margin-top: 20px;   
-    padding: 30px;
+        margin-top: 20px;
+        padding: 30px;
     }
+
     .productItemDetails .paymentby .bank {
         justify-content: space-between;
     }
-    .productItemDetails .include{
+
+    .productItemDetails .include {
         padding: 15px
     }
+
     .colfix {
-    padding-right: 15px;
-}
+        padding-right: 15px;
+    }
+
     .collectionIncluded .sectionTitle {
         padding-top: 0;
     }
+
     .collectionItem .collectionTop .img .overlay {
         padding: 20px;
-}
-    .collectionItem .collectionTop .img .overlay p{
+    }
+
+    .collectionItem .collectionTop .img .overlay p {
         line-height: 25px;
     }
+
     .iconicViolInner .details {
-    padding: 50px;
-}
-    .iconicViolInner .details p{
+        padding: 50px;
+    }
+
+    .iconicViolInner .details p {
         padding: 20px 0;
     }
+
     .iconicViol .iconicViolInner {
-        
-    background-image: url(../img/Iconic_viol_movile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    padding-top:640px ;
-}
-    
+
+        background-image: url(../img/Iconic_viol_movile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding-top: 640px;
+    }
+
     .onTreePlanet .innerItem .planterDetails {
-    background-color: rgba(74, 74, 74, 1);
-}
+        background-color: rgba(74, 74, 74, 1);
+    }
+
     .onTreePlanet .innerItem .brandImg {
-    top: 250px;
-    left: 70px;
-}
-    .aboutImg{
+        top: 250px;
+        left: 70px;
+    }
+
+    .aboutImg {
         position: relative;
     }
-    footer .col-6{
+
+    footer .col-6 {
         margin-bottom: 30px;
     }
 }
 
-@media (max-width:768px){
-    .container{
+@media (max-width:768px) {
+    .container {
         max-width: 100%;
         padding: 0 !important;
         overflow: hidden;
     }
-    .swiper-container-thumbs{
+
+    .swiper-container-thumbs {
         display: none !important;
     }
-    .productItemDetails{
+
+    .productItemDetails {
         margin-top: 0;
         padding: 40px 40px 30px;
     }
-    .collectionIncluded .sectionTitle{
+
+    .collectionIncluded .sectionTitle {
         padding: 0px 0 30px;
     }
-    .collectionIncluded .sectionDesc{
+
+    .collectionIncluded .sectionDesc {
         padding: 40px 40px 30px;
     }
-    .collectionIncluded .row{
+
+    .collectionIncluded .row {
         margin: 0;
     }
-    .collectionIncluded .row .col-sm-6{
+
+    .collectionIncluded .row .col-sm-6 {
         padding: 0;
     }
-    .collectionItem{
+
+    .collectionItem {
         margin: 0 !important;
     }
+
     .iconicViolInner .details {
-    padding: 40px;
-}
-    .collectionIncluded{
+        padding: 40px;
+    }
+
+    .collectionIncluded {
         padding-bottom: 60px;
     }
-    .iconicViol{
+
+    .iconicViol {
         padding: 0;
     }
+
     .iconicViolInner .details h2 {
         font-size: 30px;
     }
+
     .iconicViolInner .details p {
-    font-size: 22px;
+        font-size: 22px;
         padding-top: 0px;
-}
-    .iconicViol .iconicViolInner{
+    }
+
+    .iconicViol .iconicViolInner {
         padding-top: 580px;
         padding-bottom: 10px;
     }
-    .howToRefil{
+
+    .howToRefil {
         padding: 50px 0 80px
     }
-    .howToRefil .sectionTitle{
-        padding:0 40px;
+
+    .howToRefil .sectionTitle {
+        padding: 0 40px;
     }
+
     .howToRefil .sectionTitle p {
         margin-bottom: 40px;
     }
+
     .howToRefil .sectionTitle h3 {
         margin-top: 25px;
-}
+    }
+
     .howToRefil .row {
         margin: 0 5px;
     }
-    .howToRefil .row .col-6{
+
+    .howToRefil .row .col-6 {
         padding: 5px;
         margin-top: 0;
     }
-    .onTreePlanet .innerItem .planterDetails{
+
+    .onTreePlanet .innerItem .planterDetails {
         padding: 80px 40px
     }
-    .onTreePlanet .innerItem .planterDetails img{
+
+    .onTreePlanet .innerItem .planterDetails img {
         height: auto;
         width: 100%;
     }
-    .innerTextL{
+
+    .innerTextL {
         padding: 40px;
         width: 100%;
     }
-    .verticlImg{
+
+    .verticlImg {
         display: none
     }
-    .headingL img{
+
+    .headingL img {
         position: absolute !important;
         right: 40px;
         top: -90px;
         width: 120px
     }
-    .aboutImg2::before{
-        
-    border-right: 900px solid #b7929e;
+
+    .aboutImg2::before {
+
+        border-right: 900px solid #b7929e;
     }
+
     img.collectionWhite {
         display: block;
         width: 250px;
@@ -1435,52 +1499,64 @@ footer .socialIcon a img {
         margin-top: 40px;
         margin-bottom: 10px;
     }
+
     .aboutProduct .innerText {
         padding: 20px 40px 80px;
         width: 100%;
         position: relative;
     }
-    .aboutProduct .innerText img{
+
+    .aboutProduct .innerText img {
         position: absolute;
         bottom: 10px;
         width: 70px
     }
-    .reviews{
-        padding:80px 40px;
+
+    .reviews {
+        padding: 80px 40px;
     }
-    .footerArea{
-     padding: 0px 30px 30px   
+
+    .footerArea {
+        padding: 0px 30px 30px
     }
-    .footerArea .details{
+
+    .footerArea .details {
         margin-right: 0
     }
-    .footerArea .title p{
+
+    .footerArea .title p {
         margin: 0;
     }
-    .footerArea .title{
+
+    .footerArea .title {
         position: relative;
         width: 100%;
         padding: 30px 20px;
         text-align: center;
-        border-bottom: 2px solid rgba(255,255,255,.2);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
     }
-    .footerArea .title::after{
+
+    .footerArea .title::after {
         content: "\f078";
-        font-family: "Font Awesome 5 Free"; font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         color: #fff;
         position: absolute;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
     }
-    .footerArea .links{
+
+    .footerArea .links {
         display: none;
         padding-top: 20px;
-    } 
+    }
+
     .footerArea .copyright {
         padding-top: 30px;
     }
-    .swiper-button{
+
+    .swiper-button {
         color: #000 !important;
         background-color: #fff;
         font-size: 20px;
@@ -1488,181 +1564,304 @@ footer .socialIcon a img {
         height: 40px !important;
         border-radius: 50%;
         display: block;
-        color: 
+        color:
     }
-    .swiper-button i{
+
+    .swiper-button i {
         display: block;
     }
-    .swiper-button:focus{
+
+    .swiper-button:focus {
         outline: 0;
     }
-    .swiper-button-next:after, .swiper-button-prev:after{
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
         display: none
     }
-    .onTreePlanet .innerItem .brandImg{
+
+    .onTreePlanet .innerItem .brandImg {
         top: 35%;
         left: 10%;
         width: 120px;
     }
 }
-@media (max-width:500px){
+
+@media (max-width:500px) {
     h1 {
-    font-size: 22px;
-    font-weight: 900;
-}
+        font-size: 22px;
+        font-weight: 900;
+    }
 
-h2 {
-    font-size: 19px;
-    font-weight: 900;
-}
+    h2 {
+        font-size: 19px;
+        font-weight: 900;
+    }
 
-h3 {
-    font-size: 17px;
-    font-weight: 900;
-}
+    h3 {
+        font-size: 17px;
+        font-weight: 900;
+    }
 
-h4 {
-    font-size: 20px;
-    font-weight: 900;
-}
+    h4 {
+        font-size: 20px;
+        font-weight: 900;
+    }
 
-h5 {
-    font-size: 16px;
-}
+    h5 {
+        font-size: 16px;
+    }
 
-p {
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 0;
-}
+    p {
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
 
-    .productItemDetails{
+    .productItemDetails {
         margin-top: 0;
         padding: 25px 30px;
     }
-    
-    .collectionIncluded .sectionDesc{
+
+    .collectionIncluded .sectionDesc {
         padding: 40px 30px 30px;
     }
 
- 
+
     .iconicViolInner .details {
-    padding: 30px;
-}
-
-    .howToRefil .sectionTitle{
-        padding:0 30px;
+        padding: 30px;
     }
 
-  
-    .onTreePlanet .innerItem .planterDetails{
-        padding: 80px 30px
+    .howToRefil .sectionTitle {
+        padding: 0 30px;
     }
- 
-    .innerTextL{
+
+
+    .onTreePlanet .innerItem .planterDetails {
+        padding: 50px 30px
+    }
+
+    .innerTextL {
         padding: 30px;
         width: 100%;
     }
- 
- 
+
+
     .aboutProduct .innerText {
-        padding: 20px 30px 80px;
+        padding: 20px 30px 40px;
     }
-  
-    .reviews{
-        padding:80px 30px;
+
+    .reviews {
+        padding: 80px 30px;
     }
-    
-    .footerArea{
-     padding: 0px 30px 30px   
+
+    .footerArea {
+        padding: 0px 30px 30px
     }
+
     .productItemDetails .prductHeading .productReview {
         width: 84px;
         text-align: center;
     }
-    .productItemDetails .prductHeading .productReview .IconBox{line-height: 0}
-    .productItemDetails .prductHeading .productReview img{
+
+    .productItemDetails .prductHeading .productReview .IconBox {
+        line-height: 0
+    }
+
+    .productItemDetails .prductHeading .productReview img {
         height: 12px;
         width: auto;
     }
-    .productItemDetails .prductHeading .productReview p{
+
+    .productItemDetails .prductHeading .productReview p {
         font-size: 8px;
         margin-top: 2px;
     }
-    .productItemDetails .prductHeading h3{
+
+    .productItemDetails .prductHeading h3 {
         font-size: 19px;
         max-width: calc(100% - 84px);
     }
-    .productItemDetails .price h5{
+
+    .productItemDetails .price h5 {
         font-size: 14px;
     }
-    .productItemDetails .price h5 span{
+
+    .productItemDetails .price h5 span {
         margin-left: 15px
     }
-    .productItemDetails .paymentby .bank p{
+
+    .productItemDetails .paymentby .bank p {
         font-size: 8.5px;
     }
-    .productItemDetails .paymentby .bank:first-child p br{
+
+    .productItemDetails .paymentby .bank:first-child p br {
         display: none
     }
-    .productItemDetails .paymentby .bank img{
+
+    .productItemDetails .paymentby .bank img {
         height: 12px;
         margin-left: 5px !important;
     }
-    .productItemDetails p.description{
+
+    .productItemDetails p.description {
         font-size: 13.5px;
     }
-    .productItemDetails .variation h5{
+
+    .productItemDetails .variation h5 {
         font-size: 12px;
     }
-    .productItemDetails .variation h5 span{
+
+    .productItemDetails .variation h5 span {
         margin-right: 10px;
     }
-    .productItemDetails .variation .imgBox img{
+
+    .productItemDetails .variation .imgBox img {
         width: 55px;
         margin-right: 10px;
     }
-    .productItemDetails .variation .imgBox img.active{
+
+    .productItemDetails .variation .imgBox img.active {
         border-width: 3px
     }
-    .productItemDetails .include .imgBox{
+
+    .productItemDetails .include .imgBox {
         padding: 0 10px 0 5px;
     }
-    .productItemDetails .include img{
+
+    .productItemDetails .include img {
         height: 25px
     }
-    .productItemDetails .include{
+
+    .productItemDetails .include {
         padding: 10px 15px
     }
-    .productItemDetails .include .ratio p{
+
+    .productItemDetails .include .ratio p {
         font-size: 8px;
     }
-    .productItemDetails .include ol li{
+
+    .productItemDetails .include ol li {
         font-size: 10px
     }
-    .addToCart .quantityCheckBox input{
+
+    .addToCart .quantityCheckBox input {
         line-height: 0px
     }
-    .addToCart .quantityCheckBox button{
+
+    .addToCart .quantityCheckBox button {
         font-size: 14px;
         padding: 5px 8px;
         line-height: 0px;
     }
+
     .addToCartButton {
         width: calc(100% - 90px);
     }
-    .addToCartButton button{
+
+    .addToCartButton button {
         font-size: 14px;
         padding: 10px
     }
-    .addToCart .quantityCheckBox{
+
+    .addToCart .quantityCheckBox {
         width: 80px;
         margin-right: 10px;
     }
-    .productItemDetails .socialIcon i{
+
+    .productItemDetails .socialIcon i {
         font-size: 12px;
         margin-right: 10px;
     }
+
+    .collectionIncluded .sectionDesc img {
+        width: 160px
+    }
+
+    .howToRefil {
+        padding: 50px 0 50px;
+    }
+
+    .iconicViolInner .details h2 {
+        font-size: 20px
+    }
+
+    .iconicViolInner .details p {
+        font-size: 13.5px;
+    }
+
+    .iconicViol .iconicViolInner {
+        padding-top: 90vw;
+    }
+
+    .iconicViol .imgBox {
+        width: 105px;
+    }
+
+    .iconicViol .imgBox p {
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+
+    .howToRefil .imgBox p {
+        font-size: 10px;
+        padding: 8px
+    }
+
+    .howToRefil .sectionTitle p {
+        margin-bottom: 35px;
+    }
+
+    .onTreePlanet .innerItem .brandImg {
+        width: 25%;
+    }
+
+    .onTreePlanet .innerItem .planterDetails p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .onTreePlanet .innerItem .planterDetails img {
+        width: 90%;
+    }
+
+    .headingL img {
+        top: -55px;
+        width: 90px;
+        right: 25px;
+    }
+
+    .innerTextL h2 {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+        line-height: 25px
+    }
+
+    .innerTextL p {
+        font-size: 13px;
+    }
+    img.collectionWhite{
+        width: 200px;
+    }
+    .aboutProduct .innerText p{
+        font-size: 13px;
+    }
+    .aboutProduct .innerText img{
+        width: 50px;bottom: 0;
+    }
+    .reviews .container p{
+        font-size: 13px;
+    }
+    .footerArea .title{
+        padding: 25px;
+        border-width: 1px
+    }
+    .footerArea .title p{
+        font-size: 11px;
+    }
+    .footerArea .title::after{
+        font-size: 10px;
+    }
+
 }
-
-
