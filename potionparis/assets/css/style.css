@@ -555,7 +555,15 @@ p {
 .onTreePlanet .innerItem .planterDetails img {
     width: 100%;
     max-width: 395px;
+}
+.planetLogoBox{
     margin-top: 25px;
+    position: relative;
+    display: inline-block;
+}
+.planetLogoBox p{position: absolute;right: 0;
+top: -5px;
+font-size: 19px !important;
 }
 
 /*Review section start*/
@@ -1171,7 +1179,10 @@ footer .socialIcon a img {
         max-width: 574px;
         line-height: 39px;
     }
-
+    
+    .planetLogoBox p{
+    font-size: 19px !important;
+    }
     .aboutProduct .innerText p {
         font-size: 22px;
     }
@@ -1306,6 +1317,9 @@ footer .socialIcon a img {
     .headingL img {
         width: 100px;
     }
+    .planetLogoBox p{
+    font-size: 16px !important;
+    }
 
 }
 
@@ -1372,6 +1386,10 @@ footer .socialIcon a img {
 
     footer .col-6 {
         margin-bottom: 30px;
+    }
+    
+    .planetLogoBox p{
+        font-size: 16px !important;
     }
 }
 
@@ -1584,6 +1602,9 @@ footer .socialIcon a img {
         top: 35%;
         left: 10%;
         width: 120px;
+    }
+    .planetLogoBox p{
+        font-size: 19px !important;
     }
 }
 
@@ -1821,9 +1842,6 @@ footer .socialIcon a img {
         line-height: 22px;
     }
 
-    .onTreePlanet .innerItem .planterDetails img {
-        width: 90%;
-    }
 
     .headingL img {
         top: -55px;
@@ -1862,6 +1880,12 @@ footer .socialIcon a img {
     }
     .footerArea .title::after{
         font-size: 10px;
+    }
+    .planetLogoBox{
+        width: 90%;
+    }
+    .planetLogoBox p{
+        font-size: 16px !important;
     }
 
 }
