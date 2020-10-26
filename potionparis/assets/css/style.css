@@ -1186,6 +1186,7 @@ footer .socialIcon a img {
     
     .planetLogoBox p{
     font-size: 19px !important;
+        top: -5px;
     }
     .aboutProduct .innerText p {
         font-size: 22px;
