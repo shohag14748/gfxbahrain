@@ -113,9 +113,6 @@ p {
 .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
 }
-.swiper-button {
-    color: #fff !important;
-}
 .swiper-button i{
         display: none;
     }
@@ -202,6 +199,7 @@ p {
 .productItemDetails .variation h5 {
     font-size: 15px;
     font-weight: 900;
+    margin-bottom: 0;
 }
 
 .productItemDetails .variation h5 span {
@@ -845,7 +843,7 @@ footer .socialIcon a img {
 }
 
 
-@media (min-width:1500px) {
+@media (min-width:1400px) {
     .container {
         max-width: 1600px;
         /*        width: 90%;*/
@@ -1224,7 +1222,7 @@ footer .socialIcon a img {
 
 }
 
-@media (max-width:1600px) and (min-width:1500px) {
+@media (max-width:1600px) and (min-width:1400px) {
 
     .collectionItem .collectionTop .img .overlay p {
         font-size: 1.2vw;
@@ -1361,7 +1359,7 @@ footer .socialIcon a img {
     .collectionIncluded .row{
         margin: 0;
     }
-    .collectionIncluded .row .col-6{
+    .collectionIncluded .row .col-sm-6{
         padding: 0;
     }
     .collectionItem{
@@ -1507,6 +1505,163 @@ footer .socialIcon a img {
         width: 120px;
     }
 }
+@media (max-width:500px){
+    h1 {
+    font-size: 22px;
+    font-weight: 900;
+}
 
+h2 {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+    .productItemDetails{
+        margin-top: 0;
+        padding: 25px 30px;
+    }
+    
+    .collectionIncluded .sectionDesc{
+        padding: 40px 30px 30px;
+    }
+
+ 
+    .iconicViolInner .details {
+    padding: 30px;
+}
+
+    .howToRefil .sectionTitle{
+        padding:0 30px;
+    }
+
+  
+    .onTreePlanet .innerItem .planterDetails{
+        padding: 80px 30px
+    }
+ 
+    .innerTextL{
+        padding: 30px;
+        width: 100%;
+    }
+ 
+ 
+    .aboutProduct .innerText {
+        padding: 20px 30px 80px;
+    }
+  
+    .reviews{
+        padding:80px 30px;
+    }
+    
+    .footerArea{
+     padding: 0px 30px 30px   
+    }
+    .productItemDetails .prductHeading .productReview {
+        width: 82px;
+    }
+    .productItemDetails .prductHeading .productReview .IconBox{line-height: 0}
+    .productItemDetails .prductHeading .productReview img{
+        height: 12px;
+        width: auto;
+    }
+    .productItemDetails .prductHeading .productReview p{
+        font-size: 8px;
+        margin-top: 2px;
+    }
+    .productItemDetails .prductHeading h3{
+        font-size: 19px;
+        max-width: calc(100% - 82px);
+    }
+    .productItemDetails .price h5{
+        font-size: 14px;
+    }
+    .productItemDetails .price h5 span{
+        margin-left: 15px
+    }
+    .productItemDetails .paymentby .bank p{
+        font-size: 8.5px;
+    }
+    .productItemDetails .paymentby .bank:first-child p br{
+        display: none
+    }
+    .productItemDetails .paymentby .bank img{
+        height: 12px;
+        margin-left: 5px !important;
+    }
+    .productItemDetails p.description{
+        font-size: 13.5px;
+    }
+    .productItemDetails .variation h5{
+        font-size: 12px;
+    }
+    .productItemDetails .variation h5 span{
+        margin-right: 10px;
+    }
+    .productItemDetails .variation .imgBox img{
+        width: 55px;
+        margin-right: 10px;
+    }
+    .productItemDetails .variation .imgBox img.active{
+        border-width: 3px
+    }
+    .productItemDetails .include .imgBox{
+        padding: 0 10px 0 5px;
+    }
+    .productItemDetails .include img{
+        height: 25px
+    }
+    .productItemDetails .include{
+        padding: 10px 15px
+    }
+    .productItemDetails .include .ratio p{
+        font-size: 8px;
+    }
+    .productItemDetails .include ol li{
+        font-size: 10px
+    }
+    .addToCart .quantityCheckBox input{
+        line-height: 0px
+    }
+    .addToCart .quantityCheckBox button{
+        font-size: 14px;
+        padding: 5px 8px;
+        line-height: 0px;
+    }
+    .addToCartButton {
+        width: calc(100% - 90px);
+    }
+    .addToCartButton button{
+        font-size: 14px;
+        padding: 10px
+    }
+    .addToCart .quantityCheckBox{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .productItemDetails .socialIcon i{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
 
 
