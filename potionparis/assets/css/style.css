@@ -219,6 +219,7 @@ p {
 
 .productItemDetails .variation .imgBox img {
     width: 70px;
+    height: 70px;
     margin-right: 15px;
     border: 2px solid #bdbdbc;
 }
@@ -963,6 +964,7 @@ footer .socialIcon a img {
 
     .productItemDetails .variation .imgBox img {
         width: 80px;
+        height: 80px;
         margin-right: 25px;
     }
 
@@ -1744,6 +1746,7 @@ footer .socialIcon a img {
 
     .productItemDetails .variation .imgBox img {
         width: 55px;
+        height: 55px;
         margin-right: 10px;
     }
 
