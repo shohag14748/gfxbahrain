@@ -1590,7 +1590,7 @@ p {
     }
     .productItemDetails .prductHeading h3{
         font-size: 19px;
-        max-width: calc(100% - 82px);
+        max-width: calc(100% - 84px);
     }
     .productItemDetails .price h5{
         font-size: 14px;
