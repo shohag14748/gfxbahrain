@@ -842,7 +842,7 @@ footer .socialIcon a img {
 }
 
 
-@media (min-width:1400px) {
+@media (min-width:1500px) {
     .container {
         max-width: 1600px;
         /*        width: 90%;*/
@@ -1221,7 +1221,7 @@ footer .socialIcon a img {
 
 }
 
-@media (max-width:1600px) and (min-width:1400px) {
+@media (max-width:1600px) and (min-width:1500px) {
 
     .collectionItem .collectionTop .img .overlay p {
         font-size: 1.2vw;
