@@ -1577,7 +1577,8 @@ p {
      padding: 0px 30px 30px   
     }
     .productItemDetails .prductHeading .productReview {
-        width: 82px;
+        width: 84px;
+        text-align: center;
     }
     .productItemDetails .prductHeading .productReview .IconBox{line-height: 0}
     .productItemDetails .prductHeading .productReview img{
