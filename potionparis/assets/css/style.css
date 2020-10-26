@@ -113,6 +113,9 @@ p {
 .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
 }
+.swiper-button {
+    color: #fff !important;
+}
 .swiper-button i{
         display: none;
     }
