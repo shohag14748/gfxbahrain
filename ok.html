@@ -31,7 +31,7 @@ function onYouTubePlayerAPIReady() {
             //'end': 110,
             'playlist': '3mCR_NsTGIw'
         },
-        videoId: '3mCR_NsTGIw',
+        videoId: 'NQKC24th90U',
         events: {
             'onReady': onPlayerReady
         }
@@ -39,6 +39,21 @@ function onYouTubePlayerAPIReady() {
 
 }
 
+function onPlayerReady(event) {
+    event.target();
+    $('#text').fadeIn(100);
+}
+
+$(window).scroll(function() {
+   var hT = $('.m-video').height(),
+       wS = $(this).scrollTop();
+   if (wS > hT) {
+      player.pauseVideo();
+   }
+   else {
+      player.playVideo();
+   }
+});
 </script>
 
 </body>
