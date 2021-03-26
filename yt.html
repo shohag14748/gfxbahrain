@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    * { box-sizing: border-box; }
+
+.Video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Video_background {
+  background: #000;
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  overflow: hidden;
+}
+
+.Video_wrapper,
+.Video_background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.Video_overlay {
+  position: absolute; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.Video_title {
+  font-family: Avenir, Helvetica, sans-serif; 
+  color: #fff; 
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.Video_tile h1 { 
+  font-size: 2rem; 
+  font-weight: 700; 
+  margin-top: 0; 
+  line-height: 1.2; 
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .Video_wrapper {
+    height: 300%; 
+    top: -100%; 
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .Video_wrapper { 
+    width: 300%; 
+    left: -100%; 
+   }
+}
+
+    </style>
+</head>
+<body>
+   
+   <div class="Video">
+  <div class="Video_background">
+      <div class="Video_wrapper">
+     <iframe src="https://www.youtube.com/embed/Q_WrhIgNHS8?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=Q_WrhIgNHS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>  
+   </div>
+
+  <div class="Video_overlay">
+    <div class="Video_title">
+      <h1>Bring Your Twist</h1>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
